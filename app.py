@@ -10,6 +10,8 @@ from sklearn.neighbors import KNeighborsClassifier
 
 app = dash.Dash(__name__)
 
+server = app.server
+
 app.layout = html.Div([
     dcc.Graph(id="graph"),
     html.P("Number of neighbors:"),
